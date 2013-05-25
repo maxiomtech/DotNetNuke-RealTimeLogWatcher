@@ -1,0 +1,90 @@
+﻿.iitLogger input.showNumber {
+  margin-left: 10px;
+  border: 1px solid #c9c9c9;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  padding: 2px 8px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 1.5em;
+  width: 2em;
+}
+.iitLogger #log-table,
+.iitLogger #saved-table {
+  width: 100%;
+}
+.iitLogger #log-table th,
+.iitLogger #saved-table th {
+  text-align: left;
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f0f2f1 100%);
+  color: #333;
+  padding: 6px 12px 6px 12px;
+  border: 0;
+  border-bottom: 1px solid #c9c9c9;
+  border-right: 1px solid #c9c9c9;
+  font-weight: bold;
+}
+.iitLogger #log-table tr,
+.iitLogger #saved-table tr {
+  cursor: pointer;
+}
+.iitLogger #log-table tr td,
+.iitLogger #saved-table tr td {
+  white-space: nowrap;
+  padding: 6px 12px 6px 12px;
+  background-color: #fff;
+  border-bottom: 1px solid #c9c9c9;
+  border-right: 1px solid #c9c9c9;
+}
+.iitLogger #log-table tr td div,
+.iitLogger #saved-table tr td div {
+  display: none;
+}
+.iitLogger #log-table tr td.message,
+.iitLogger #saved-table tr td.message {
+  white-space: normal;
+}
+.iitLogger #log-table tr.odd td,
+.iitLogger #saved-table tr.odd td {
+  background-color: #F2F2F2;
+}
+.iitLogger #log-table tr.warn td,
+.iitLogger #saved-table tr.warn td {
+  color: #FF8000;
+}
+.iitLogger #log-table tr.debug td,
+.iitLogger #saved-table tr.debug td {
+  color: #A0A0A0;
+}
+.iitLogger #log-table tr.trace td,
+.iitLogger #saved-table tr.trace td {
+  color: #A0A0A0;
+}
+.iitLogger #log-table tr.error td,
+.iitLogger #saved-table tr.error td {
+  color: #FF0000;
+}
+.iitLogger #log-table tr.fatal td,
+.iitLogger #saved-table tr.fatal td {
+  color: #8B2899;
+}
+.iitLogger #log-table tr.alert td,
+.iitLogger #saved-table tr.alert td {
+  color: #FF00FF;
+}
+.iitLogger #log-table tr.notice td,
+.iitLogger #saved-table tr.notice td {
+  color: #397B39;
+}
+.iitLogger #log-table tr.fatal td,
+.iitLogger #saved-table tr.fatal td {
+  color: #828282;
+}
+.iitLogger #log-table tr.emergency td,
+.iitLogger #saved-table tr.emergency td {
+  color: #76237D;
+}
+.iitLogger #log-table tr.severe td,
+.iitLogger #saved-table tr.severe td {
+  color: #E3021F;
+}

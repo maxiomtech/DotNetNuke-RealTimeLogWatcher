@@ -1,0 +1,84 @@
+﻿.iitLogger {
+
+    input.showNumber {
+        margin-left:10px;
+        border:1px solid #c9c9c9;
+        -webkit-box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, .5);
+        box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, .5);
+        padding:2px 8px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        font-size:1.5em;
+        width:2em;
+    }
+
+    #log-table, #saved-table {
+        width: 100%;
+
+        th {
+            text-align: left;
+            background: -webkit-linear-gradient(top, #fff 0%,#f0f2f1 100%);
+            color: #333;
+            padding: 6px 12px 6px 12px;
+            border: 0;
+            border-bottom: 1px solid #c9c9c9;
+            border-right: 1px solid #c9c9c9;
+            font-weight: bold;
+        }
+
+        tr {
+            cursor:pointer;
+
+            td {
+                white-space: nowrap;
+                padding: 6px 12px 6px 12px;
+                background-color: #fff;
+                border-bottom: 1px solid #c9c9c9;
+                border-right: 1px solid #c9c9c9;
+
+                div {
+                    display: none;
+                }
+            }
+
+                td.message {
+                    white-space: normal;
+                }
+        }
+
+            tr.odd td {
+                background-color: #F2F2F2;
+            }
+
+            tr.warn td {
+                color: #FF8000;
+            }
+            tr.debug td {
+                color: #A0A0A0;
+            }
+            tr.trace td {
+                color: #A0A0A0;
+            }
+            tr.error td {
+                color: #FF0000;
+            }
+            tr.fatal td {
+                color:#8B2899;
+            }
+            tr.alert td {
+                color:#FF00FF;
+            }
+            tr.notice td {
+                color:#397B39;
+            }
+            tr.fatal td {
+                color:#828282;
+            }
+            tr.emergency td {
+                color:#76237D;
+            }
+            tr.severe td {
+                color:#E3021F;
+            }
+    }
+}
