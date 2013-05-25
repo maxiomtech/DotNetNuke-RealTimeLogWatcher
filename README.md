@@ -36,6 +36,9 @@ DotNetNuke module to live monitor log4net logs.
 <param name="Threshold" value="ERROR" />
 ```
 
+### Requirements
+- Requires DotNetNuke 7.0.6. Simply because I didn't change the reference to something older. Incentive to be on the latest release.
+
 ### Roadmap
 - Automatically add appender to <code>DotNetNuke.log4net.config</code>
 - Counting recurring messages.
