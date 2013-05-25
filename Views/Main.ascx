@@ -1,10 +1,11 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Main.ascx.cs" Inherits="InspectorIT.RealTimeLogWatcher.Views.Main" %>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
 
-<script src="<%= ControlPath %>../Scripts/angular.min.js"></script>
-<script src="<%= ControlPath %>../Scripts/moment.min.js"></script>
-<script src="<%= ControlPath %>../Scripts/jquery.signalR-1.1.1.min.js"></script>
-<script src='<%: ResolveClientUrl("~/signalr/hubs") %>'></script>
-<script src="<%= ControlPath %>../js/hub.js"></script>
+<dnn:DnnJsInclude ID="DnnJsInclude2" runat="server" FilePath="~/DesktopModules/InspectorIT/RealTimeLogWatcher/js/angular.min.js" Priority="101"  />
+<dnn:DnnJsInclude ID="DnnJsInclude3" runat="server" FilePath="~/DesktopModules/InspectorIT/RealTimeLogWatcher/js/moment.min.js" Priority="102"  />
+<dnn:DnnJsInclude ID="DnnJsInclude4" runat="server" FilePath="~/DesktopModules/InspectorIT/RealTimeLogWatcher/js/jquery.signalR-1.1.1.min.js" Priority="103"  />
+<dnn:DnnJsInclude ID="DnnJsInclude5" runat="server" FilePath="~/signalr/hubs" Priority="104"  />
+<dnn:DnnJsInclude ID="DnnJsInclude1" runat="server" FilePath="~/DesktopModules/InspectorIT/RealTimeLogWatcher/js/Main.js" Priority="106"  />
 
 
 <div class="iitLogger"  ng-app="iitLogger" ng-controller="LoggerCtl">

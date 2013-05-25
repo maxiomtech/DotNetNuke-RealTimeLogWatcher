@@ -46,6 +46,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\bin\DotNetNuke.dll</HintPath>
     </Reference>
+    <Reference Include="DotNetNuke.Instrumentation, Version=6.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\DotNetNuke.Instrumentation.dll</HintPath>
+    </Reference>
     <Reference Include="DotNetNuke.Log4Net, Version=3.0.0.0, Culture=neutral, PublicKeyToken=53eb1fac7b60111f, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\bin\DotNetNuke.Log4Net.dll</HintPath>
@@ -58,29 +62,22 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\bin\DotNetNuke.Web.Client.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.AspNet.SignalR.Client">
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.SignalR.Client.1.1.1\lib\net45\Microsoft.AspNet.SignalR.Client.dll</HintPath>
+    <Reference Include="Microsoft.AspNet.SignalR.Client, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Microsoft.AspNet.SignalR.Client.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.SignalR.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\packages\Microsoft.AspNet.SignalR.Core.1.1.1\lib\net40\Microsoft.AspNet.SignalR.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.AspNet.SignalR.Owin, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.SignalR.Owin.1.1.1\lib\net45\Microsoft.AspNet.SignalR.Owin.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.AspNet.SignalR.SystemWeb, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.SignalR.SystemWeb.1.1.1\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+      <HintPath>..\..\..\bin\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\packages\Microsoft.Owin.Host.SystemWeb.1.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <HintPath>..\..\..\bin\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -88,7 +85,7 @@
     </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <HintPath>..\..\..\bin\Owin.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -114,6 +111,7 @@
     <Compile Include="Components\JsonLevel.cs" />
     <Compile Include="Components\JsonLocationInfo.cs" />
     <Compile Include="Components\JsonLoggingEventData.cs" />
+    <Compile Include="Components\RouteMapper.cs" />
     <Compile Include="Loader.ascx.cs">
       <DependentUpon>Loader.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -133,7 +131,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="js\hub.js" />
+    <Content Include="Documentation\License.htm" />
+    <Content Include="Documentation\ReleaseNotes.htm" />
+    <Content Include="images\icon.png" />
+    <Content Include="js\Main.js" />
     <Content Include="Loader.ascx" />
     <Content Include="module.css">
       <DependentUpon>module.less</DependentUpon>
@@ -142,19 +143,23 @@
       <DependentUpon>module.less</DependentUpon>
     </Content>
     <Content Include="packages.config" />
-    <Content Include="Scripts\angular.js" />
-    <Content Include="Scripts\angular.min.js" />
-    <Content Include="Scripts\jquery.signalR-1.1.1.js" />
-    <Content Include="Scripts\jquery.signalR-1.1.1.min.js" />
-    <Content Include="Scripts\moment.js" />
-    <Content Include="Scripts\moment.min.js" />
+    <Content Include="js\angular.js" />
+    <Content Include="js\angular.min.js" />
+    <Content Include="js\jquery.signalR-1.1.1.js" />
+    <Content Include="js\jquery.signalR-1.1.1.min.js" />
+    <Content Include="js\moment.js" />
+    <Content Include="js\moment.min.js" />
     <Content Include="Views\Main.ascx" />
     <Content Include="module.less" />
-    <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <None Include="InspectorIT.RealTimeLogWatcher.dnn" />
+    <Content Include="BuildScripts\ModulePackage.targets" />
+    <Content Include="BuildScripts\MSBuild.Community.Tasks.Targets" />
+    <Content Include="BuildScripts\CopyIndirectDependencies.targets" />
+    <None Include="js\jquery-1.6.4-vsdoc.js" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\jquery-1.6.4.js" />
-    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="js\jquery-1.6.4.js" />
+    <Content Include="js\jquery-1.6.4.min.js" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
@@ -182,11 +187,6 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+  <Import Project="BuildScripts\ModulePackage.Targets" />
+  <Target Name="AfterBuild" DependsOnTargets="PackageModule" />
 </Project>

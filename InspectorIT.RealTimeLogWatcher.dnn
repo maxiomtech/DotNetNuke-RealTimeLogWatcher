@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="InspectorIT.RealTimeLogWatcher" type="Module" version="1.0.0.0">
+      <friendlyName>Real Time Log Watcher</friendlyName>
+      <description>Allows you to show/hide content based on querystring values.</description>
+      <iconFile>DesktopModules/InspectorIT/RealTimeLogWatcher/images/icon.png</iconFile>
+      <owner>
+        <name>Jonathan Sheely</name>
+        <organization>InspectorIT</organization>
+        <url>http://InspectorIT.com</url>
+        <email>jsheely@inspectorit.com</email>
+      </owner>
+      <license src="License.htm" />
+      <releaseNotes src="ReleaseNotes.htm" />
+      <components>
+        <component type="Script">
+          <scripts>
+            <basePath>DesktopModules\InspectorIT\RealTimeLogWatcher</basePath>
+          </scripts>
+        </component>
+        <component type="Module">
+          <desktopModule>
+            <moduleName>InspectorIT.RealTimeLogWatcher</moduleName>
+            <foldername>InspectorIT/RealTimeLogWatcher</foldername>
+            <businessControllerClass />
+            <supportedFeatures />
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>Real Time Log Watcher</friendlyName>
+                <defaultCacheTime>0</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>DesktopModules/InspectorIT/RealTimeLogWatcher/Loader.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <supportsPopUps>False</supportsPopUps>
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <basePath>bin</basePath>
+            <assembly>
+              <name>InspectorIT.RealTimeLogWatcher.dll</name>
+            </assembly>
+            <assembly>
+              <name>Microsoft.AspNet.SignalR.Client.dll</name>
+            </assembly>
+            <assembly>
+              <name>Microsoft.AspNet.SignalR.Core.dll</name>
+            </assembly>
+            <assembly>
+              <name>Microsoft.AspNet.SignalR.SystemWeb.dll</name>
+            </assembly>
+            <assembly>
+              <name>Microsoft.AspNet.SignalR.Owin.dll</name>
+            </assembly>
+            <assembly>
+              <name>Microsoft.Owin.Host.SystemWeb.dll</name>
+            </assembly>
+            <assembly>
+              <name>Owin.dll</name>
+            </assembly>
+          </assemblies>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules\InspectorIT\RealTimeLogWatcher</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+              <sourceFileName>Resources.zip</sourceFileName>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
