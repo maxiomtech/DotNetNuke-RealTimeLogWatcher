@@ -39,10 +39,15 @@ DotNetNuke module to live monitor log4net logs.
 ### Roadmap
 - Automatically add appender to <code>DotNetNuke.log4net.config</code>
 - Counting recurring messages.
+- Look into security issues.
 
 ### Special Thanks
 
 Thanks to *Chris Fulstow* and his [log4net.SignalR](https://github.com/ChrisFulstow/log4net.SignalR) project for giving me the idea.
+
+### Fun Facts
+- Uses [AngularJS](http://angularjs.org/) for the client side UI. Includes the new <code>ng-animate</code> directive to animate the log messages in and out of the table.
+- Uses [SignalR](http://signalr.net/) Hubs to pass messages to the client in real time.
 
 ### Screenshot
 
