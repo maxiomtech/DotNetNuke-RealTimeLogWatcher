@@ -77,7 +77,7 @@ function LoggerCtl($scope,$timeout) {
     };
 
     $scope.levelFilter = function(obj) {
-        return obj.levelFilter == $scope.level || $scope.level=="ALL";
+        return obj.Level.Name == $scope.level || $scope.level == "ALL";
     }
 
 

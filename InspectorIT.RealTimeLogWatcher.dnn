@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="InspectorIT.RealTimeLogWatcher" type="Module" version="1.0.24.0">
+    <package name="InspectorIT.RealTimeLogWatcher" type="Module" version="1.0.25.0">
       <friendlyName>Real Time Log Watcher</friendlyName>
       <description>Allows you to show/hide content based on querystring values.</description>
       <iconFile>DesktopModules/InspectorIT/RealTimeLogWatcher/images/icon.png</iconFile>
