@@ -26,7 +26,7 @@ namespace InspectorIT.RealTimeLogWatcher.Components
                 if (value != "")
                 {
                     HubConnection connection = new HubConnection(value);
-                    proxyConnection = connection.CreateHubProxy("signalrAppenderHub");
+                    proxyConnection = connection.CreateHubProxy("logWatcherHub");
                     connection.Start().Wait();
 
                 }

@@ -3,7 +3,7 @@ using Microsoft.AspNet.SignalR.Hubs;
 
 namespace InspectorIT.RealTimeLogWatcher.Components
 {
-    [HubName("signalrAppenderHub")]
+    [HubName("logWatcherHub")]
     public class SignalrAppenderHub : Hub
     {
         public SignalrAppenderHub()
