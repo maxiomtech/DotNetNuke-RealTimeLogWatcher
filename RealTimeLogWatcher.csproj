@@ -151,15 +151,12 @@
     <Content Include="js\moment.min.js" />
     <Content Include="Views\Main.ascx" />
     <Content Include="module.less" />
-    <None Include="InspectorIT.RealTimeLogWatcher.dnn" />
+    <None Include="InspectorIT.RealTimeLogWatcher.dnn">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="BuildScripts\ModulePackage.targets" />
     <Content Include="BuildScripts\MSBuild.Community.Tasks.Targets" />
-    <Content Include="BuildScripts\CopyIndirectDependencies.targets" />
-    <None Include="js\jquery-1.6.4-vsdoc.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="js\jquery-1.6.4.js" />
-    <Content Include="js\jquery-1.6.4.min.js" />
+    <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

@@ -27,7 +27,7 @@ iitLogger.angular.animation('customSlideDown-leave', function () {
 });
 
 
-iitLogger.log4net = $.connection.signalrAppenderHub;
+iitLogger.log4net = $.connection.logWatcherHub;
 
 iitLogger.log4net.client.onLoggedEvent = function (eventString, loggedEvent) {
     loggedEvent.CleanTime = moment(loggedEvent.TimeStamp).format("h:mm:ss A");
@@ -43,6 +43,7 @@ $.connection.hub.start().done(function () {
 
 function LoggerCtl($scope,$timeout) {
     $scope.logs = iitLogger.logs;
+    $scope.level = "ALL";
     $scope.savedLogs = [];
     $scope.showNumber = 10;
     $scope.isEnabled = true;
@@ -74,6 +75,10 @@ function LoggerCtl($scope,$timeout) {
             $scope.savedLogs.splice(index, 1);
         }
     };
+
+    $scope.levelFilter = function(obj) {
+        return obj.levelFilter == $scope.level || $scope.level=="ALL";
+    }
 
 
 }

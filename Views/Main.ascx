@@ -12,6 +12,21 @@
     <a href="#" ng-click="toggleScroll($event)" class="dnnPrimaryAction">{{actionText()}}</a>
     <a href="#" ng-click="clearLog($event)" class="dnnSecondaryAction">Clear</a>  
     <input type="text" ng-model="showNumber" id="showNumber" class="showNumber" name="showNumber" />
+    <select id="ddlLevel" ng-model="level">
+        <option>ALL</option>
+        <option>VERBOSE</option>
+        <option>TRACE</option>
+        <option>DEBUG</option>
+        <option>INFO</option>
+        <option>NOTICE</option>
+        <option>WARN</option>
+        <option>ERROR</option>
+        <option>SEVERE</option>
+        <option>CRTICAL</option>
+        <option>ALERT</option>
+        <option>FATAL</option>
+        <option>EMERGENCY</option>
+    </select>
     <table id="log-table">
         <tr>
             <th>Date</th>
@@ -20,7 +35,7 @@
             <th>Logger</th>
             <th>Message</th>
         </tr>
-        <tr ng-repeat="log in logs | orderBy:'TimeStamp':true | limitTo:showNumber" 
+        <tr ng-repeat="log in logs | orderBy:'TimeStamp':true | limitTo:showNumber | filter:levelFilter" 
             class="{{log.Level.Name.toLowerCase()}}" 
             ng-class-even="'odd'"
             ng-click="saveLog()" 
