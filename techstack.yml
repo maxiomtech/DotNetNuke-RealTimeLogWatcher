@@ -2,7 +2,7 @@ repo_name: maxiomtech/DotNetNuke-RealTimeLogWatcher
 report_id: 6a8e8c9f93935b746c962542c421367b
 version: 0.1
 repo_type: Public
-timestamp: '2023-12-27T19:58:27+00:00'
+timestamp: '2024-01-04T14:56:18+00:00'
 requested_by: jsheely
 provider: github
 branch: master
@@ -31,6 +31,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png
+  detection_source_url: https://github.com/maxiomtech/DotNetNuke-RealTimeLogWatcher
   detection_source: Repo Metadata
 - name: CSS 3
   description: The latest evolution of the Cascading Style Sheets language
@@ -40,6 +41,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/maxiomtech/DotNetNuke-RealTimeLogWatcher
   detection_source: Repo Metadata
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -50,6 +52,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/maxiomtech/DotNetNuke-RealTimeLogWatcher
   detection_source: Repo Metadata
 - name: ".NET"
   description: A free, cross-platform, open source developer platform for building
@@ -61,6 +64,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1014/IoPy1dce_400x400.png
+  detection_source_url: https://github.com/maxiomtech/DotNetNuke-RealTimeLogWatcher/blob/master/packages.config
   detection_source: packages.config
   last_updated_by: Jonathan Sheely
   last_updated_on: 2013-05-25 05:21:18.000000000 Z
@@ -73,6 +77,7 @@ tools:
   category: Libraries
   sub_category: Javascript UI Libraries
   image_url: https://img.stackshare.io/service/1021/lxEKmMnB_400x400.jpg
+  detection_source_url: https://github.com/maxiomtech/DotNetNuke-RealTimeLogWatcher/blob/master/packages.config
   detection_source: packages.config
   last_updated_by: Jonathan Sheely
   last_updated_on: 2013-05-25 05:21:18.000000000 Z
@@ -98,6 +103,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/maxiomtech/DotNetNuke-RealTimeLogWatcher
   detection_source: Repo Metadata
 - name: NuGet
   description: The package manager for .NET
@@ -107,6 +113,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
+  detection_source_url: https://github.com/maxiomtech/DotNetNuke-RealTimeLogWatcher/blob/master/packages.config
   detection_source: packages.config
   last_updated_by: Jonathan Sheely
   last_updated_on: 2013-05-25 05:21:18.000000000 Z
@@ -118,6 +125,7 @@ tools:
   category: Application Hosting
   sub_category: Web Server Interface
   image_url: https://img.stackshare.io/service/4967/New_Project__95_.png
+  detection_source_url: https://github.com/maxiomtech/DotNetNuke-RealTimeLogWatcher/blob/master/packages.config
   detection_source: packages.config
   last_updated_by: Jonathan Sheely
   last_updated_on: 2013-05-25 05:21:18.000000000 Z
@@ -263,8 +271,14 @@ tools:
   last_updated_by: Jonathan Sheely
   last_updated_on: 2013-05-25 05:21:18.000000000 Z
   vulnerabilities:
-  - name: Improper Handling of Exceptional Conditions in Newtonsoft.Json
+  - name: 'Duplicate Advisory: Improper Handling of Exceptional Conditions in Newtonsoft.Json'
     cve_id: 
+    cve_url: https://github.com/advisories/GHSA-8rfx-6mr3-5jh3
+    detected_date: Jan 4
+    severity: high
+    first_patched: 13.0.1
+  - name: Improper Handling of Exceptional Conditions in Newtonsoft.Json
+    cve_id: CVE-2024-21907
     cve_url: https://github.com/advisories/GHSA-5crp-9r3c-p9vr
     detected_date: Jun 23
     severity: high
