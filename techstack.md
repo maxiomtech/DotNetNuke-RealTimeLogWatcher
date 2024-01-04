@@ -36,7 +36,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [maxiomtech/DotNetNuke-RealTimeLogWatcher](https://github.com/maxiomtech/DotNetNuke-RealTimeLogWatcher)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|22<br/>Tools used|12/27/23 <br/>Report generated|
+|22<br/>Tools used|01/04/24 <br/>Report generated|
 |------|------|
 </div>
 
@@ -156,7 +156,7 @@ Full tech stack [here](/techstack.md)
 |[Microsoft.Owin.Host.SystemWeb](https://www.nuget.org/Microsoft.Owin.Host.SystemWeb)|v1.0.1|05/25/13|Jonathan Sheely |Apache-2.0|N/A|
 |[Microsoft.Web.Infrastructure](https://www.nuget.org/Microsoft.Web.Infrastructure)|v1.0.0|05/25/13|Jonathan Sheely |N/A|N/A|
 |[Moment.js](https://www.nuget.org/Moment.js)|v2.0.0|05/25/13|Jonathan Sheely |N/A|[CVE-2022-24785](https://github.com/advisories/GHSA-8hfj-j24r-96c4) (High)|
-|[Newtonsoft.Json](https://www.nuget.org/Newtonsoft.Json)|v4.5.11|05/25/13|Jonathan Sheely |MIT|[](https://github.com/advisories/GHSA-5crp-9r3c-p9vr) (High)|
+|[Newtonsoft.Json](https://www.nuget.org/Newtonsoft.Json)|v4.5.11|05/25/13|Jonathan Sheely |MIT|[](https://github.com/advisories/GHSA-8rfx-6mr3-5jh3) (High)<br/>[CVE-2024-21907](https://github.com/advisories/GHSA-5crp-9r3c-p9vr) (High)|
 |[angularjs](https://www.nuget.org/angularjs)|v1.1.4|05/25/13|Jonathan Sheely |N/A|N/A|
 |[log4net](https://www.nuget.org/log4net)|v2.0.0|05/25/13|Jonathan Sheely |Apache-2.0|[CVE-2018-1285](https://github.com/advisories/GHSA-2cwj-8chv-9pp9) (Critical)|
 
