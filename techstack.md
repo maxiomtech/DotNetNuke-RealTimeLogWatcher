@@ -3,13 +3,13 @@
 ## Tech Stack
 maxiomtech/DotNetNuke-RealTimeLogWatcher is built on the following main stack:
 
-- [.NET](http://www.microsoft.com/net/) – Frameworks (Full Stack)
+- [ASP.NET](https://www.asp.net/) – Languages
 - [C#](http://csharp.net) – Languages
-- [jQuery](http://jquery.com/) – Javascript UI Libraries
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+- [.NET](http://www.microsoft.com/net/) – Frameworks (Full Stack)
+- [jQuery](http://jquery.com/) – Javascript UI Libraries
 - [SignalR](https://dotnet.microsoft.com/en-us/apps/aspnet/signalr) – Realtime Backend / API
 - [Owin](http://owin.org/) – Web Server Interface
-- [ASP.NET](https://www.asp.net/) – Languages
 
 Full tech stack [here](/techstack.md)
 
@@ -19,13 +19,13 @@ Full tech stack [here](/techstack.md)
 ## Tech Stack
 maxiomtech/DotNetNuke-RealTimeLogWatcher is built on the following main stack:
 
-- <img width='25' height='25' src='https://img.stackshare.io/service/1014/IoPy1dce_400x400.png' alt='.NET'/> [.NET](http://www.microsoft.com/net/) – Frameworks (Full Stack)
+- <img width='25' height='25' src='https://img.stackshare.io/service/6755/2c45151a4a11d3a3c8e71bb34dd069d6_400x400.png' alt='ASP.NET'/> [ASP.NET](https://www.asp.net/) – Languages
 - <img width='25' height='25' src='https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png' alt='C#'/> [C#](http://csharp.net) – Languages
-- <img width='25' height='25' src='https://img.stackshare.io/service/1021/lxEKmMnB_400x400.jpg' alt='jQuery'/> [jQuery](http://jquery.com/) – Javascript UI Libraries
 - <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/1014/IoPy1dce_400x400.png' alt='.NET'/> [.NET](http://www.microsoft.com/net/) – Frameworks (Full Stack)
+- <img width='25' height='25' src='https://img.stackshare.io/service/1021/lxEKmMnB_400x400.jpg' alt='jQuery'/> [jQuery](http://jquery.com/) – Javascript UI Libraries
 - <img width='25' height='25' src='https://img.stackshare.io/service/4013/SignalR-logo.png' alt='SignalR'/> [SignalR](https://dotnet.microsoft.com/en-us/apps/aspnet/signalr) – Realtime Backend / API
 - <img width='25' height='25' src='https://img.stackshare.io/service/4967/New_Project__95_.png' alt='Owin'/> [Owin](http://owin.org/) – Web Server Interface
-- <img width='25' height='25' src='https://img.stackshare.io/service/6755/2c45151a4a11d3a3c8e71bb34dd069d6_400x400.png' alt='ASP.NET'/> [ASP.NET](https://www.asp.net/) – Languages
 
 Full tech stack [here](/techstack.md)
 
@@ -36,7 +36,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [maxiomtech/DotNetNuke-RealTimeLogWatcher](https://github.com/maxiomtech/DotNetNuke-RealTimeLogWatcher)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|22<br/>Tools used|01/05/24 <br/>Report generated|
+|22<br/>Tools used|02/29/24 <br/>Report generated|
 |------|------|
 </div>
 
